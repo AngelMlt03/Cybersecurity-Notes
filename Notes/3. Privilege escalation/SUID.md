@@ -17,3 +17,23 @@ Search **`env`** on GTFOBins with SUID permission: https://gtfobins.github.io/gt
 - **`/usr/bin/env`** → Runs a command in a modified environment (typically used to locate and execute binaries in the correct environment).
 - **`/bin/sh`** → Starts a new shell session using `/bin/sh`.
 - **`-p`** → Instructs the shell to **not drop privileges** when executing.
+
+
+## Sudo commands without password
+
+**Lists the commands that the current user can run with `sudo` privileges** without needing a password.
+``` bash
+sudo -l
+```
+
+![[Pasted image 20250329044236.png]]
+
+
+## Escalation with Vim
+
+This command will open the **Vim editor** as the `root` user if the user is able to execute vim as root with sudo.
+``` bash
+sudo -u root /usr/bin/vim
+```
+
+![[Pasted image 20250329044631.png]]
