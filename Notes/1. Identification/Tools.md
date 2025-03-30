@@ -1,3 +1,16 @@
+## Ping
+
+``` bash
+ping -c 1 172.18.0.2
+```
+
+![[Pasted image 20250330033058.png]]
+
+| -c 1    | Send only 1 packet |
+| ------- | ------------------ |
+| ttl=64  | Linux SO           |
+| ttl=128 | Windows SO         |
+
 ## Nmap
 
 ``` bash
